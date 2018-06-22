@@ -1,0 +1,6 @@
+framework module Pods_MaiCoinAssignment {
+  umbrella header "Pods-MaiCoinAssignment-umbrella.h"
+
+  export *
+  module * { export * }
+}

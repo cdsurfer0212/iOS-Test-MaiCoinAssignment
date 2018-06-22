@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ConversionCollectionViewCell" customModule="MaiCoinAssignment" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BTC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0fF-ga-1He">
+                        <rect key="frame" x="58" y="14.5" width="33" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dCG-e3-h18">
+                        <rect key="frame" x="30" y="14.5" width="8" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="256" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eEb-X9-unV">
+                        <rect key="frame" x="214" y="15" width="31" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OHa-Tx-SLl">
+                        <rect key="frame" x="265" y="15" width="35" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="=" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KiV-jg-nHg">
+                        <rect key="frame" x="111" y="15" width="11" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="OHa-Tx-SLl" secondAttribute="trailing" constant="20" id="2Qi-Fb-hpA"/>
+                <constraint firstItem="dCG-e3-h18" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="Au7-09-nuq"/>
+                <constraint firstItem="dCG-e3-h18" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="30" id="BIO-0x-jSo"/>
+                <constraint firstItem="eEb-X9-unV" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="PRw-XE-EDt"/>
+                <constraint firstItem="KiV-jg-nHg" firstAttribute="leading" secondItem="0fF-ga-1He" secondAttribute="trailing" constant="20" id="Ugz-wf-YFO"/>
+                <constraint firstItem="0fF-ga-1He" firstAttribute="leading" secondItem="dCG-e3-h18" secondAttribute="trailing" constant="20" id="ZBN-zB-O3J"/>
+                <constraint firstItem="OHa-Tx-SLl" firstAttribute="leading" secondItem="eEb-X9-unV" secondAttribute="trailing" constant="20" id="c2k-J3-rMq"/>
+                <constraint firstItem="KiV-jg-nHg" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="eXB-gq-sc0"/>
+                <constraint firstItem="OHa-Tx-SLl" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="nMP-Tt-0la"/>
+                <constraint firstItem="0fF-ga-1He" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="svy-0x-MyP"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <connections>
+                <outlet property="cryptocurrencySymbolLabel" destination="0fF-ga-1He" id="cmL-Ww-dBW"/>
+                <outlet property="fiatCurrencySymbolLabel" destination="OHa-Tx-SLl" id="nMU-nQ-uRc"/>
+                <outlet property="priceLabel" destination="eEb-X9-unV" id="Hrm-h6-EL9"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+</document>
